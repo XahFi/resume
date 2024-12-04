@@ -9,6 +9,14 @@ export const Container = styled.div`
   background-color: ${({ theme }) => theme.body};
   backdrop-filter: blur(40px);
   border-radius: 8px;
+
+  @media (width <= 1000px) and (width > 500px) {
+    width: 700px;
+  }
+
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 `;
 
 export const Section = styled.section`
