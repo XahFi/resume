@@ -10,7 +10,8 @@ import {
   Introduction,
   Skills,
   Projects,
-  RainBackground
+  RainBackground,
+  Contact
 } from './components/components'
 
 
@@ -41,6 +42,7 @@ const App: React.FC = () => {
         <Section><Education /></Section>
         <Section><Skills /></Section>
         <Section><Projects /></Section>
+        <Section><Contact /></Section>
       </ Container>
     </ThemeProvider>
   </>);

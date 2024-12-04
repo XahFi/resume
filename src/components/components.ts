@@ -5,6 +5,7 @@ import Skills from "./Skills";
 import RainBackground from "./RainBG";
 import ThemeButton from "./ThemeButton";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 export {
     Education,
@@ -13,5 +14,6 @@ export {
     Skills,
     RainBackground,
     ThemeButton,
-    Projects
+    Projects,
+    Contact
 }
