@@ -17,6 +17,7 @@ const Project: FC<ProjectInfo> = ({ title, link, src, desc }) => {
 			<p>{desc}</p>
 			{src !== '' && <a href={src} style={{marginTop: '10px'}}> Source code</a>}
 		</ProjectDesc>
+		More coming soon...
 	</div>);
 };
 
