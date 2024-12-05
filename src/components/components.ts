@@ -6,6 +6,7 @@ import RainBackground from "./RainBG";
 import ThemeButton from "./ThemeButton";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import WindyBG from "./WindyBG";
 
 export {
     Education,
@@ -15,5 +16,6 @@ export {
     RainBackground,
     ThemeButton,
     Projects,
-    Contact
+    Contact,
+    WindyBG
 }
