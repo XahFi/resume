@@ -17,7 +17,6 @@ const Project: FC<ProjectInfo> = ({ title, link, src, desc }) => {
 			<p>{desc}</p>
 			{src !== '' && <a href={src} style={{marginTop: '10px'}}> Source code</a>}
 		</ProjectDesc>
-		More coming soon...
 	</div>);
 };
 
@@ -29,6 +28,7 @@ const Projects: React.FC = () => {
 			{PROJECTS.map(({title, link, src, desc}) => 
 				<Project title={title} link={link} src={src} desc={desc}/>
 			)}
+			More coming soon...
     </Section>
   );
 };
