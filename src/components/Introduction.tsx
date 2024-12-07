@@ -10,9 +10,6 @@ const Introduction: React.FC = () => {
     <p>
       I am currently very interested about the possibilities that the integration of AI can have in web applications, particularly in the aspect of creating uniquely tailored user experiences.
     </p>
-    <p>
-      A little side note, the animated background for this page has been made using React Three Fibre (ThreeJS). I recommend the dark mode!
-    </p>
   </Section>
   );
 };
