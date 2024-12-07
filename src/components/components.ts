@@ -7,6 +7,7 @@ import ThemeButton from "./ThemeButton";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import WindyBG from "./WindyBG";
+import TitleSection from "./TitleSection";
 
 export {
     Education,
@@ -17,5 +18,6 @@ export {
     ThemeButton,
     Projects,
     Contact,
-    WindyBG
+    WindyBG,
+    TitleSection
 }
