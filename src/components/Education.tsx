@@ -40,7 +40,7 @@ const Institute = styled.p`
 
 const Duration = styled.p`
   font-size: 14px;
-  color: gray;
+  /* color: gray; */
   margin: 0;
 `;
 

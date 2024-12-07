@@ -39,7 +39,7 @@ const Company = styled.p`
 
 const Duration = styled.p`
   font-size: 14px;
-  color: gray;
+  /* color: gray; */
   margin: 5px 0;
 `;
 
