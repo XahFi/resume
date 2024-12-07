@@ -1,5 +1,4 @@
 import { createGlobalStyle, keyframes } from 'styled-components';
-import rainImg from '../assets/rain.jpg';
 
 const rain = keyframes`
   0% {
@@ -15,8 +14,6 @@ export const GlobalStyles = createGlobalStyle`
     margin: 10px;
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    /* background: linear-gradient(white, blue), url(${rainImg}); */
-    /* background-image: url(${rainImg}); */
     background-size: cover;
     color: ${({ theme }) => theme.text};
     transition: all 0.50s linear;
