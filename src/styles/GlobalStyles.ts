@@ -1,13 +1,4 @@
-import { createGlobalStyle, keyframes } from 'styled-components';
-
-const rain = keyframes`
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-`;
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   body {
@@ -21,8 +12,6 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     align-items: center;
     height: 100%;
-    /* overflow: hidden; */
-    /* animation: ${rain} 120ms linear infinite; */
 
     a {
 	    text-decoration: none;

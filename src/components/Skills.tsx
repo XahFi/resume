@@ -1,4 +1,3 @@
-import React from 'react';
 import { FC } from 'react';
 import styled from 'styled-components';
 import {SKILLS} from '../data/data';
@@ -32,9 +31,9 @@ const Skills: React.FC = () => {
     <SectionTitle>Skills</SectionTitle>
     <SkillsList>
       {Object.entries(SKILLS).map(([category, skills]) => (
-            skills.map(skill => 
-              <SkillButton key={skill} skill={skill} category={category}/>
-            )
+        skills.map(skill => 
+          <SkillButton key={skill} skill={skill} category={category}/>
+        )
       ))}
     </SkillsList>
     <div style={{margin: "30px 0"}}>

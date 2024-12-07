@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Section, SectionTitle } from '../styles/PageStyles';
 
+// Future change: each experience item should be mapped from a list of experience items imported from data
 const Experience = () => (
   <Section>
     <SectionTitle>Professional Experience</SectionTitle>

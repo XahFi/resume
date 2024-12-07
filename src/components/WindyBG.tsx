@@ -4,9 +4,11 @@ import * as THREE from 'three';
 import { lightTheme } from '../styles/LightDark';
 
 const Leaves: FC = () => {
+  // setting the object and speed
   const ref = useRef<THREE.Mesh>(null!);
   const speed = Math.random() * 0.2 + 0.015;
 
+  // use frame for the animation
   useFrame(() => {
     if (ref.current) {
       ref.current.position.x += speed;
@@ -24,6 +26,7 @@ const Leaves: FC = () => {
   );
 };
 
+// The canvas to put the 3d objects on
 const WindBackground: FC = () => {
   return (
     <Canvas style={{ 

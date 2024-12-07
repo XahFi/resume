@@ -1,5 +1,5 @@
 import { Section } from '../styles/PageStyles';
-import { ThemeButton } from './components';
+import ThemeButton from '../styles/ThemeButton';
 
 interface TitleProps {
   theme: string;

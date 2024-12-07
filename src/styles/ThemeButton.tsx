@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { lightTheme, darkTheme } from "../styles/LightDark";
+import { lightTheme, darkTheme } from "./LightDark";
 
 interface ThemeButtonProps {
   theme: string;

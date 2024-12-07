@@ -33,7 +33,6 @@ export const Section = styled.section`
 
   p {
     margin-bottom: 10px;
-    /* line-height: 1.6; */
   }
 `;
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Section, SectionTitle } from '../styles/PageStyles';
 
 const Introduction: React.FC = () => {

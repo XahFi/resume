@@ -15,8 +15,8 @@ import {
   TitleSection
 } from './components/components'
 
-
 const App: React.FC = () => {
+  // The dark/light mode state handler
   const [theme, setTheme] = useState('dark');
 
   const toggleTheme = () => {
