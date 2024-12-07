@@ -1,7 +1,6 @@
 import { useRef, FC } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { lightTheme } from '../styles/LightDark';
 
 const RainDrop: FC = () => {
   const ref = useRef<THREE.Mesh>(null!);
@@ -19,16 +18,12 @@ const RainDrop: FC = () => {
   return (
     <mesh ref={ref} position={[Math.random() * 20 - 10, Math.random() * 20, Math.random() * 20 - 10]}>
       <cylinderGeometry args={[0.025, 0.05, 0.2, 3]} />
-      <meshBasicMaterial />
+      <meshBasicMaterial color='#486583'/>
     </mesh>
   );
 };
 
-interface RainBG {
-  theme: string
-}
-
-const RainBackground: FC<RainBG> = ({theme}) => {
+const RainBackground: FC = () => {
   return (
     <Canvas style={{ 
       position: 'fixed',
@@ -36,7 +31,8 @@ const RainBackground: FC<RainBG> = ({theme}) => {
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundColor: `${theme === 'dark' ? 'black' : lightTheme.body}`
+      // backgroundColor: `${theme === 'dark' ? 'black' : lightTheme.body}`
+      background: 'linear-gradient(to bottom, #243444, #34495e, #2b3d63)',
     }}>
       {[...Array(300)].map((_, i) => (
         <RainDrop key={i} />

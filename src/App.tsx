@@ -26,7 +26,7 @@ const App: React.FC = () => {
   return (<>
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-      {theme === 'light' ? <WindyBG /> : <RainBackground theme={theme}/>}
+      {theme === 'light' ? <WindyBG /> : <RainBackground/>}
       <Container>
         <TitleSection theme={theme} toggleTheme={toggleTheme}/>
         <Introduction />

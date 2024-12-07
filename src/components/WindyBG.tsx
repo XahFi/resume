@@ -1,12 +1,11 @@
 import { useRef, FC } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
-import { lightTheme } from '../styles/LightDark';
 
 const Leaves: FC = () => {
   // setting the object and speed
   const ref = useRef<THREE.Mesh>(null!);
-  const speed = Math.random() * 0.2 + 0.015;
+  const speed = Math.random() * 0.02 + 0.015;
 
   // use frame for the animation
   useFrame(() => {
@@ -35,9 +34,10 @@ const WindBackground: FC = () => {
       left: 0,
       width: '100%',
       height: '100%',
-      backgroundColor:lightTheme.body
+      // backgroundColor:lightTheme.body
+      background: 'linear-gradient(to bottom, #FFBB33, #FFCC66, #FFDD99)',
     }}>
-      {[...Array(300)].map((_, i) => (
+      {[...Array(50)].map((_, i) => (
         <Leaves key={i} />
       ))}
     </Canvas>

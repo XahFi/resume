@@ -14,7 +14,7 @@ const TitleSection: React.FC<TitleProps> = ({theme = 'dark', toggleTheme}) => {
 					<p style={{fontSize: '60px', fontWeight: '600', margin: '10px 0'}}>Shafi Rafiq</p>
 				</div>
 				<ThemeButton theme={theme} onClick={toggleTheme}>
-					{theme === 'light' ? 'Dark' : 'Light'}
+					{theme === 'light' ? 'Winter' : 'Summer'}
 				</ThemeButton>
 			</div>
     </Section>
